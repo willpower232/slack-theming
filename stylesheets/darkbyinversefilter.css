@@ -43,6 +43,11 @@
 	filter:none; /* since popups aren't filtered, undo emoji filter */
 }
 
+/* revert input complete popup thing */
+.tab_complete_ui {
+	filter:hue-rotate(180deg) invert(100%);
+}
+
 #footer {
 	background:white; /* remove silly gradient and remember the colour gets inverted */
 }
