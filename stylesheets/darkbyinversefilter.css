@@ -1,0 +1,39 @@
+/* a few lines to create a rudimentary dark main column by inverting all colours */
+
+.client_main_container {
+	filter:hue-rotate(180deg) invert(100%); /* filter everything right of the sidebar */
+}
+#col_flex {
+	filter:hue-rotate(180deg) invert(100%); /* revert sidebar */
+}
+
+/* revert media */
+#col_messages img {
+	filter:hue-rotate(180deg) invert(100%);
+}
+.c-message_attachment__image {
+	filter:hue-rotate(180deg) invert(100%);
+}
+.c-message_attachment__video {
+	filter:hue-rotate(180deg) invert(100%);
+}
+
+/* revert for share dialog */
+.c-dialog .c-message_attachment__image {
+	filter:none;
+}
+.c-dialog .c-message_attachment__image {
+	filter:none;
+}
+
+/* revert emoji */
+.emoji-outer {
+	filter:hue-rotate(180deg) invert(100%);
+}
+.c-menu .emoji-outer {
+	filter:none; /* since popups aren't filtered, undo emoji filter */
+}
+
+#footer {
+	background:white; /* remove silly gradient and remember the colour gets inverted */
+}

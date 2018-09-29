@@ -1,0 +1,11 @@
+/* change the font to nunito */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900');
+
+[lang] body {
+	font-family:'Nunito', sans-serif; /* change the font to the import */
+}
+
+[lang] .c-message {
+	font-weight:600; /* make messages more legible */
+}
