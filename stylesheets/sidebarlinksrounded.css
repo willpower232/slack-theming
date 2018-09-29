@@ -1,0 +1,18 @@
+/* rounds the sidebar links that have a background */
+
+.p-channel_sidebar__channel,
+.p-channel_sidebar__link,
+.p-channel_sidebar__close_container {
+	border-radius:0 15px 15px 0;width:calc(100% - 24px);
+}
+.p-channel_sidebar__close_container .p-channel_sidebar__channel {
+	width: 100%; /* direct messages need to avoid double narrowing */
+}
+
+/*
+I don't want to put a border on the sidebar links but if you do, you'll need something like this
+.p-channel_sidebar__channel--selected {
+	border: solid red;
+	border-width: 1px 1px 1px 0;
+}
+*/
