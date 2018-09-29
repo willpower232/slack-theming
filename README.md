@@ -10,7 +10,7 @@ My knowledge of how to do this is sourced partially from [widget-/slack-black-th
 
 ## Installation
 
-*Please note that you are modifying a core file and will have to repeat this process each time Slack updates*
+**Please note that you are modifying a core file and will have to repeat this process each time Slack updates**
 
 As of Slack 3.0.0, you need to modify the `resources\app.asar.unpacked\src\static\ssb-interop.js` file. The location of this file will be inside a version folder in one of the following places
 
