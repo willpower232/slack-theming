@@ -17,6 +17,9 @@
 .c-message_attachment__video {
 	filter:hue-rotate(180deg) invert(100%);
 }
+.c-message_attachment__thumb {
+	filter:hue-rotate(180deg) invert(100%);
+}
 
 /* revert for share dialog */
 .c-dialog .c-message_attachment__image {
