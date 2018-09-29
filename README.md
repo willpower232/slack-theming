@@ -99,6 +99,12 @@ If you would like to use the Developer Tools inside of the Slack app, you'll nee
 
 The Developer Tools are also handy for confirming that your javascript modifications for installation have not caused any errors.
 
+### Caching
+
+The app will quite aggressively cache the stylesheets you load which is great for long term performance but not so great for short term development. You can use the custom CSS ability to test things quickly without updating stylesheets but if you need to clear the stylesheets, you will have to use the Developer Tools to clear the cache specifically for those files.
+
+I haven't completely figured it out but under the `Network` tab, you can turn on `Disable Cache` but you probably also have to locate the css files you loaded under `XHR`, right click, and choose `Clear Browser Cache`. The Developer Menu under View gives you the ability to reload everything so that is also handy as well as closing and reopening the whole thing.
+
 ## Over to you
 
 If you find any problems in my code, particularly the CSS filter as I think I've missed a few images that will be inverted, make an issue or pull request.
