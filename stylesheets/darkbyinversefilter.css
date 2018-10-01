@@ -39,7 +39,7 @@
 .emoji-outer {
 	filter:hue-rotate(180deg) invert(100%);
 }
-.c-menu .emoji-outer {
+.c-dialog .emoji-outer,.c-menu .emoji-outer {
 	filter:none; /* since popups aren't filtered, undo emoji filter */
 }
 
