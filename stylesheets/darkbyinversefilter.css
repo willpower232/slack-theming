@@ -53,6 +53,10 @@
 	filter:hue-rotate(180deg) invert(100%);
 }
 
+#col_flex .c-unified_member .member_image {
+	filter:none; /* revert sidebar */
+}
+
 #footer {
 	background:white; /* remove silly gradient and remember the colour gets inverted */
 }
