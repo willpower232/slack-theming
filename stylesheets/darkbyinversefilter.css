@@ -48,6 +48,11 @@
 	filter:hue-rotate(180deg) invert(100%);
 }
 
+/* revert big profile image at start of conversation */
+.c-unified_member .member_image {
+	filter:hue-rotate(180deg) invert(100%);
+}
+
 #footer {
 	background:white; /* remove silly gradient and remember the colour gets inverted */
 }
