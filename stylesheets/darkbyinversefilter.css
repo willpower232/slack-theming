@@ -49,7 +49,7 @@
 }
 
 /* revert big profile image at start of conversation */
-.c-unified_member .member_image {
+.p-message_pane__foreword .c-unified_member .member_image {
 	filter:hue-rotate(180deg) invert(100%);
 }
 
