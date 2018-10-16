@@ -36,17 +36,14 @@
 }
 
 /* revert emoji */
-.emoji-outer {
+#col_messages .emoji-outer {
 	filter:hue-rotate(180deg) invert(100%);
 }
-.c-custom_status .emoji {
+#col_messages .c-custom_status .emoji {
 	filter:hue-rotate(180deg) invert(100%); /* custom statuses have different classes */
 }
-.c-dialog .emoji-outer,.c-menu .emoji-outer {
-	filter:none; /* since popups aren't filtered, undo emoji filter */
-}
-#col-flex .emoji-outer {
-	filter:none; /* undo filter for threads in sidebar */
+.c-message__body .emoji {
+	filter:hue-rotate(180deg) invert(100%); /* jumbomoji */
 }
 
 /* revert input complete popup thing */
