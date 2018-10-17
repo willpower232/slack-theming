@@ -11,28 +11,14 @@
 #col_messages img {
 	filter:hue-rotate(180deg) invert(100%);
 }
-.c-message_attachment__image {
+#col_messages .c-message_attachment__image {
 	filter:hue-rotate(180deg) invert(100%);
 }
-.c-message_attachment__video {
+#col_messages .c-message_attachment__video {
 	filter:hue-rotate(180deg) invert(100%);
 }
-.c-message_attachment__thumb {
+#col_messages .c-message_attachment__thumb {
 	filter:hue-rotate(180deg) invert(100%);
-}
-.c-dialog .c-message_attachment__video_thumb {
-	filter:hue-rotate(180deg) invert(100%); /* for the delete pop up */
-}
-.c-dialog .c-message_attachment__thumb {
-	filter:none; /* for the delete pop up */
-}
-
-/* revert for share dialog */
-.c-dialog .c-message_attachment__image {
-	filter:none;
-}
-.c-dialog .c-message_attachment__image {
-	filter:none;
 }
 
 /* revert emoji */
