@@ -38,6 +38,11 @@
 	filter:hue-rotate(180deg) invert(100%); /* jumbomoji */
 }
 
+
+.tab_complete_ui .emoji-outer {
+	filter:none; /* revert revert the autocomplete emoji */
+}
+
 /* revert input complete popup thing */
 .tab_complete_ui {
 	filter:hue-rotate(180deg) invert(100%);
