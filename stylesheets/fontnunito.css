@@ -9,3 +9,7 @@
 [lang] .c-message {
 	font-weight:600; /* make messages more legible */
 }
+
+[lang] .c-message b,[lang] .c-message strong {
+	font-weight:800; /* now have to bold the bolding tags even more */
+}
