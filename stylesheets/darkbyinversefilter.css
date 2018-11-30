@@ -26,6 +26,9 @@
 #col_messages .c-file__thumb {
 	filter:hue-rotate(180deg) invert(100%);
 }
+#col_messages .c-file__media--video {
+	filter:hue-rotate(180deg) invert(100%);
+}
 
 /* revert emoji */
 #col_messages .emoji-outer {
