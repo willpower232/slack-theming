@@ -23,6 +23,10 @@
 #col_messages .c-message_attachment__audio {
 	filter:hue-rotate(180deg) invert(100%);
 }
+/* do not do this, unfortunately genuine emoji have to remain uninverted */
+/*#col_messages .c-message_attachment__title_link {
+	filter:hue-rotate(180deg) invert(100%);
+}*/
 #col_messages .c-file__thumb {
 	filter:hue-rotate(180deg) invert(100%);
 }
