@@ -59,6 +59,14 @@
 	filter:hue-rotate(180deg) invert(100%);
 }
 
+/* the threads page is completely different because of course it is */
+#threads_msgs figure,#threads_msgs .member_image {
+	filter:hue-rotate(180deg) invert(100%);
+}
+#threads_msgs .attachment_group .msg_inline_video_buttons_div {
+	filter:hue-rotate(180deg) invert(100%);
+}
+
 #col_flex .c-unified_member .member_image {
 	filter:none; /* revert sidebar */
 }
