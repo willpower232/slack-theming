@@ -14,7 +14,7 @@
 #col_messages .c-message_attachment__image {
 	filter:hue-rotate(180deg) invert(100%);
 }
-#col_messages .c-message_attachment__video {
+#col_messages .c-message_attachment__video, #col_messages .c-pillow_file__video {
 	filter:hue-rotate(180deg) invert(100%);
 }
 #col_messages .c-message_attachment__thumb {
