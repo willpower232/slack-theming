@@ -27,7 +27,7 @@
 /*#col_messages .c-message_attachment__title_link {
 	filter:hue-rotate(180deg) invert(100%);
 }*/
-#col_messages .c-file__thumb {
+#col_messages .c-file__thumb, #col_messages .c-pillow_file__preview {
 	filter:hue-rotate(180deg) invert(100%);
 }
 #col_messages .c-file__media--video {
