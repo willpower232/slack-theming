@@ -16,7 +16,7 @@ As of Slack 3.0.0, you need to modify the `resources\app.asar.unpacked\src\stati
 
 * Windows: `%homepath%\AppData\Local\slack\`
 * Mac: `/Applications/Slack.app/Contents/`
-* Linux: `/usr/lib/slack/` (Debian-based, please note that this will not work if you have installed Slack via snap for complicated application reasons)
+* Linux: `/usr/lib/slack/` (Debian-based, please note that this will not work if you have installed Slack via snap for complicated application reasons and if you break slack, you can reinstall with something along the lines of `sudo apt-get install --reinstall slack-desktop`)
 
 You have to include the following code at the bottom of the file.
 
