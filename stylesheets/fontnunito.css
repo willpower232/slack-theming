@@ -7,9 +7,13 @@
 }
 
 [lang] .c-message {
-	font-weight:600; /* make messages more legible */
+	font-weight:600!important; /* make messages more legible */
 }
 
 [lang] .c-message b,[lang] .c-message strong {
 	font-weight:800; /* now have to bold the bolding tags even more */
+}
+
+.c-message_attachment__author_name, .c-message_attachment__author_name.c-link--button, .c-message_attachment__author_name.c-link--button:active, .c-message_attachment__author_name.c-link--button:focus, .c-message_attachment__author_name.c-link--button:hover {
+	font-weight:600; /* message titles */
 }
