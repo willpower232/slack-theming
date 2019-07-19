@@ -1,0 +1,48 @@
+/* a few lines to create a rudimentary dark main column by inverting all colours */
+/* - todo: verify that all these are actually required */
+
+.p-client_container {
+	filter:hue-rotate(180deg) invert(100%); /* filter everything right of the sidebar */
+}
+.p-team_sidebar,.p-workspace__sidebar,.p-classic_nav__team_header {
+	filter:hue-rotate(180deg) invert(100%); /* revert sidebar */
+}
+
+.p-workspace__secondary_view {
+	filter:hue-rotate(180deg) invert(100%); /* revert right sidebar */
+}
+.p-flexpane__body {
+	background:white; /* stop the black background showing through */
+}
+
+/* revert media */
+.p-message_pane__list_container img {
+	filter:hue-rotate(180deg) invert(100%);
+}
+.p-message_pane__list_container .c-message_attachment__image {
+	filter:hue-rotate(180deg) invert(100%);
+}
+.p-message_pane__list_container .c-message_attachment__video, .p-message_pane__list_container .c-pillow_file__video {
+	filter:hue-rotate(180deg) invert(100%);
+}
+.p-message_pane__list_container .c-message_attachment__thumb {
+	filter:hue-rotate(180deg) invert(100%);
+}
+.p-message_pane__list_container .c-message_attachment__audio {
+	filter:hue-rotate(180deg) invert(100%);
+}
+
+.p-message_pane__list_container .c-file__thumb, .p-message_pane__list_container .c-pillow_file__preview {
+	filter:hue-rotate(180deg) invert(100%);
+}
+.p-message_pane__list_container .c-file__media--video {
+	filter:hue-rotate(180deg) invert(100%);
+}
+
+/* revert emoji */
+.p-message_pane__list_container .emoji-outer {
+	filter:hue-rotate(180deg) invert(100%);
+}
+.p-message_pane__list_container .c-custom_status .emoji {
+	filter:hue-rotate(180deg) invert(100%); /* custom statuses have different classes */
+}

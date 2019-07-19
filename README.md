@@ -12,11 +12,19 @@ My knowledge of how to do this is sourced partially from [widget-/slack-black-th
 
 **Please note that you are modifying a core file and will have to repeat this process each time Slack updates**
 
-As of Slack 3.0.0, you need to modify the `resources\app.asar.unpacked\src\static\ssb-interop.js` file. The location of this file will be inside a version folder in one of the following places
+#### Step 1 Locate your slack installation folder
 
 * Windows: `%homepath%\AppData\Local\slack\`
 * Mac: `/Applications/Slack.app/Contents/`
 * Linux: `/usr/lib/slack/` (Debian-based, please note that this will not work if you have installed Slack via snap for complicated application reasons and if you break slack, you can reinstall with something along the lines of `sudo apt-get install --reinstall slack-desktop`)
+
+#### Step 2 Pick the appropriate file to edit
+
+As of Slack 3.0.0, you need to modify the `resources\app.asar.unpacked\src\static\ssb-interop.js` file.
+
+As of Slack 4.0.0, you need to modify the `dist\ssb-interop.bundle.js` file which is part of the `resources\app.asar` archive. The easiest way of editing is with the [Asar7z plugin](http://www.tc4shell.com/en/7zip/asar/) for [7-Zip](https://www.7-zip.org/) but you can also use npm to install asar to manage the archive.
+
+#### Step 3 Include the code
 
 You have to include the following code at the bottom of the file.
 
@@ -26,9 +34,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	// since we are only interested in the textual content, we can host stylesheets at github
 	var stylesheets = [
-		'https://raw.githubusercontent.com/willpower232/slack-theming/master/stylesheets/fontnunito.css',
-		'https://raw.githubusercontent.com/willpower232/slack-theming/master/stylesheets/darkbyinversefilter.css',
-		'https://raw.githubusercontent.com/willpower232/slack-theming/master/stylesheets/sidebarlinksrounded.css',
+		// EITHER
+
+		'https://raw.githubusercontent.com/willpower232/slack-theming/master/stylesheets/3/fontnunito.css',
+		'https://raw.githubusercontent.com/willpower232/slack-theming/master/stylesheets/3/darkbyinversefilter.css',
+		'https://raw.githubusercontent.com/willpower232/slack-theming/master/stylesheets/3/sidebarlinksrounded.css',
+
+		// OR
+
+		'https://raw.githubusercontent.com/willpower232/slack-theming/master/stylesheets/4/darkbyinversefilter.css',
+		'https://raw.githubusercontent.com/willpower232/slack-theming/master/stylesheets/4/sidebarlinksrounded.css',
 	];
 
 	// create a separate fetch for each stylesheet for asynchronicity
@@ -63,7 +78,9 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 ```
 
-Please note this is set up that you can include multiple stylesheets from various sources and also add custom CSS code yourself. The stylesheets in this repository have very specific tasks so you can only include those that you want if you wish.
+Please note this is set up that you can include multiple stylesheets from various sources and also add custom CSS code yourself. The stylesheets in this repository have very specific tasks so you can only include those that you want if you wish. The stylesheets are now in subfolders to appropriately cover the changes in each version.
+
+Unfortunately for customisations, Slack 4 includes Content Security Policy so it is now more difficult to include custom code like fonts so I haven't updated the font stylesheet.
 
 If you examine other sources, you will find they include the following section of code. I have not found it necessary to include it but YMMV so I've kept a copy here.
 
