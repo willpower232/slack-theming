@@ -16,33 +16,33 @@
 }
 
 /* revert media */
-.p-message_pane__list_container img {
+.p-message_pane img {
 	filter:hue-rotate(180deg) invert(100%);
 }
-.p-message_pane__list_container .c-message_attachment__image {
+.p-message_pane .c-message_attachment__image {
 	filter:hue-rotate(180deg) invert(100%);
 }
-.p-message_pane__list_container .c-message_attachment__video, .p-message_pane__list_container .c-pillow_file__video {
+.p-message_pane .c-message_attachment__video, .p-message_pane .c-pillow_file__video {
 	filter:hue-rotate(180deg) invert(100%);
 }
-.p-message_pane__list_container .c-message_attachment__thumb {
+.p-message_pane .c-message_attachment__thumb {
 	filter:hue-rotate(180deg) invert(100%);
 }
-.p-message_pane__list_container .c-message_attachment__audio {
+.p-message_pane .c-message_attachment__audio {
 	filter:hue-rotate(180deg) invert(100%);
 }
 
-.p-message_pane__list_container .c-file__thumb, .p-message_pane__list_container .c-pillow_file__preview {
+.p-message_pane .c-file__thumb, .p-message_pane .c-pillow_file__preview {
 	filter:hue-rotate(180deg) invert(100%);
 }
-.p-message_pane__list_container .c-file__media--video {
+.p-message_pane .c-file__media--video {
 	filter:hue-rotate(180deg) invert(100%);
 }
 
 /* revert emoji */
-.p-message_pane__list_container .emoji-outer {
+.p-message_pane .emoji-outer {
 	filter:hue-rotate(180deg) invert(100%);
 }
-.p-message_pane__list_container .c-custom_status .emoji {
+.p-message_pane .c-custom_status .emoji {
 	filter:hue-rotate(180deg) invert(100%); /* custom statuses have different classes */
 }
