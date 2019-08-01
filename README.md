@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		// OR
 
 		'https://raw.githubusercontent.com/willpower232/slack-theming/master/stylesheets/4/darkbyinversefilter.css',
+		'https://raw.githubusercontent.com/willpower232/slack-theming/master/stylesheets/4/hidequickjump.css',
 		'https://raw.githubusercontent.com/willpower232/slack-theming/master/stylesheets/4/sidebarlinksrounded.css',
 	];
 

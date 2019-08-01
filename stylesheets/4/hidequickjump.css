@@ -1,0 +1,5 @@
+/* I couldn't find a setting to hide the quick jump thing in the sidebar and it was wasting valuable screen space */
+
+.p-channel_sidebar__navigation_bar {
+	display: none;
+}
