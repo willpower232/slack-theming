@@ -48,6 +48,6 @@
 }
 
 /* the threads page is completely different because of course it is */
-.c-avatar__image,.c-message_attachment__video_thumb,.c-message_attachment__image,.c-message_attachment__thumb {
+.p-threads_view .c-avatar__image,.p-threads_view .c-message_attachment__video_thumb,.p-threads_view .c-message_attachment__image,.p-threads_view .c-message_attachment__thumb {
 	filter: hue-rotate(180deg) invert(100%);
 }
